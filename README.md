@@ -1,5 +1,13 @@
-Project Title: Healthcare Operations Intelligence Dashboard With Decision Analytics
+# Healthcare Operations Intelligence Dashboard
 
-Project Statement: This project aims to develop an intelligent healthcare operations analytics platform that provides real-time visibility into hospital performance, operational efficiency, resource utilization, patient service trends and clinical workload distribution. The dashboard leverages data analytics, visualization techniques and operational intelligence methodologies to support informed decision-making by healthcare administrators and management teams. The solution consolidates operational data from various healthcare functions including patient admissions, discharge activities, resource allocation, workforce utilization, treatment demand and facility performance metrics. Through interactive dashboards and predictive operational indicators, healthcare leaders can monitor critical performance measures, identify operational bottlenecks, optimize resource planning and improve overall service delivery. The platform serves as a centralized decision-support system that transforms operational healthcare data into actionable intelligence for strategic planning and continuous operational improvement.
+Synthetic healthcare operations analytics project for Infosys Springboard.
 
-Outcomes: Comprehensive visibility into healthcare operational performance through real-time analytics dashboards. Monitoring of patient flow, treatment demand, and healthcare service utilization patterns. Resource intelligence including bed utilization, workforce allocation, and operational capacity tracking. Operational risk identification through trend analysis and performance monitoring. Improved decision-making through centralized healthcare intelligence and reporting.
+## Run
+pip install -r requirements.txt
+python src/generate_data.py
+streamlit run app.py
+
+Architecture:
+Data Source -> Cleaning -> KPI Analytics -> Decision Analytics -> Dashboard
+
+The dataset is synthetic and contains no real patient information.
